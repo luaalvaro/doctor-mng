@@ -1,0 +1,49 @@
+<!-- Include HEADER -->
+    <%- include('include/_header') %>
+<!-- /Include HEADER -->
+
+    <!-- Main Body -->
+    <main id="site-main">
+        <div class="container">
+            <div class="flex-inline">
+                <a href="/add" class="border-shadow mtb-2">
+                    <span class="p-1">
+                        Cadastrar médico
+                        <i class="fas fa-user"></i>
+                    </span>
+                </a>
+                <form action="/search" method="GET" class="box-nav d-flex justify-between">
+                    <span>
+                        <input type="text"" name="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </span>
+                </form>
+            </div>
+            
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>NOME</th>
+                            <th>CRM</th>
+                            <th>TELEFONE</th>
+                            <th>CELLPHONE</th>
+                            <th>CEP</th>
+                            <th>ESPECIALIDADE</th>
+                            <th>AÇÃO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show')%>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Body -->
+
+
+<!-- Include footer -->
+    <%- include('include/_footer') %>
+<!-- /Include footer -->

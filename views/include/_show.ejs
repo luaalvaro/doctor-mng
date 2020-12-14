@@ -1,0 +1,23 @@
+<% for(var i = 0; i < doctors.length; i++) { %>  
+<tr>
+    <td><%= doctors[i].id %></td>
+    <td><%= doctors[i].name %></td>
+    <td><%= doctors[i].crm %></td>
+    <td><%= doctors[i].telephone %></td>
+    <td><%= doctors[i].cellphone %>
+        <a href="http://api.whatsapp.com/send?phone=<%= doctors[i].cellphone %>" class="btn border-shadow update">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </td>
+    <td><%= doctors[i].cep %></td>
+    <td><%= doctors[i].specialty %></td>
+    <td>
+        <a href="/update?id=<%= doctors[i].id %>" class="btn update mlr-1">
+            <i class="far fa-edit"></i>
+        </a>
+        <a href="/delete?id=<%= doctors[i].id %>" class="btn delete" name="btn-delete">
+                    <i class="fas fa-times"></i>
+        </a>
+    </td>
+</tr>
+<% } %>

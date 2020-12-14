@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+    --maxcolor: #40508D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.nav-brand {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.flex-inline {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border-shadow {
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+
+.mtb-1 {
+    margin: 10px 0;
+}
+
+.mtb-2 {
+    margin: 20px 0;
+}
+
+.mlr-1 {
+    margin: 0 10px;
+}
+
+.mlr-2 {
+    margin: 0 20px;
+}
+
+.ml-1 {
+    margin-left: 10px;
+}
+
+.ml-2 {
+    margin-left: 20px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+
+.text-dark {
+    color: var(--dark);
+}
+
+.inline {
+    display: inline-block;
+}
+
+.text-light {
+    color: white;
+}
+
+#header nav {
+    background-color: var(--maxcolor);
+    padding: 20px 0;
+}
+
+#site-main {
+    margin-top: 50px;
+}
+
+#site-main .container .box-nav > a {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+#site-main .container .box-nav > a > span {
+    margin: 10px;
+}
+
+table {
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td, th {
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.table .thead-dark th {
+    color: white;
+    background-color: var(--maxcolor);
+}
+
+
+/* Estilização da página add_doctor */
+
+.form-content {
+    max-width: 768px;
+    margin: auto;
+    width: 60%;
+}
+
+.form-content .form-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+    margin-bottom: .2em;
+}
+
+.form-content input {
+    font-size: 1.1rem;
+    padding: 0 10px;
+    outline: none;
+}
+
+.form-content button {
+    font-size: 2em;
+    width: 100%;
+    margin-top: 25px;
+    background-color: var(--maxcolor);
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.sucess {
+    border: 1px solid var(--maxcolor);
+}
+
+.error-description {
+    font-size: .75rem;
+    color: red;
+}
+
+.select-specialty {
+    cursor: pointer;
+}
